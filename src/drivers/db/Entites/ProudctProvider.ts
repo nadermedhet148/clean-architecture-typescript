@@ -22,8 +22,10 @@ export class ProductProvider extends BaseEntity {
   @JoinColumn({ name: "product_id" })
   provider: Provider;
   
-  @Column("float")
+  @Column("double")
   price: number;
 
+  @Column("boolean")
+  available: boolean;
 
 }
