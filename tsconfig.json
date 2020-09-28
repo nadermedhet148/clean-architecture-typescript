@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es5",
+    "allowJs": true,
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@enterprise" : ["enterprise-business-rules"],
+      "frameworks-and-drivers" : ["frameworks-and-drivers"],
+      "interface-adapters" : ["interface-adapters"],
+      "application-business-rules" : ["application-business-rules"],
+    },
+  },
+  "include": ["./src/**/*", "drivers/db/Entites"],
+  "exclude": ["node_modules"],
+
+}
