@@ -22,10 +22,8 @@ app.use(
 );
 app.use(compress);
 app.use(cors());
-/**
- * App routes definition
- */
-app.use("/auth", productsRoutes());
+
+app.use("/products", productsRoutes());
 
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
 

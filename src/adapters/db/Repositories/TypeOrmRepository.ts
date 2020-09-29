@@ -1,4 +1,4 @@
-import { establishConnection } from "drivers/db/connection";
+import { establishConnection } from "./../../../drivers/db/connection";
 import { Connection } from "typeorm";
 
 export class TypeOrmRepository {

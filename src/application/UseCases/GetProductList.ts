@@ -6,7 +6,15 @@ export class GetProductList {
 
     }
 
-    execute(){
+    execute(params : {
+        pagination : {
+            limit : number;
+            skip : number;
+        },
+        categoryId : number
+    }){
+
+        return [];
         
     }
 

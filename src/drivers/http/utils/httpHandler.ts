@@ -21,7 +21,7 @@ export const httpHandler =  function createControllerCallback(controller) {
           res.set(httpResponse.headers);
         }
         res.type("json");
-        res.status(httpResponse.statusCode).send(httpResponse.body);
+        res.status(200).send(httpResponse);
       })
       .catch((e) => {
         res.status(500).send({
