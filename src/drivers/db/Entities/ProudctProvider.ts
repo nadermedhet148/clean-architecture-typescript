@@ -19,7 +19,7 @@ export class ProductProvider extends BaseEntity {
   product: Product;
 
   @ManyToOne((type) => Provider, (provider) => provider.products)
-  @JoinColumn({ name: "product_id" })
+  @JoinColumn({ name: "provider_id" })
   provider: Provider;
   
   @Column("double")

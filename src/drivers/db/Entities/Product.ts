@@ -28,7 +28,7 @@ export class Product extends BaseEntity {
 
   @OneToMany(
     (type) => ProductProvider,
-    (productProvider) => productProvider.provider
+    (productProvider) => productProvider.product
   )
   providers: Provider[];
 }

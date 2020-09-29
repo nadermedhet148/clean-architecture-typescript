@@ -6,13 +6,11 @@ export const pagination = (req , res , next)=>{
         res.status(400).send(`you must send limit in your query`);
     }
 
-    if(!skip || !Number.parseInt(skip)){
-        res.status(400).send(`you must send skip in your query`);
-    }
+ 
 
     req.pagination = {
         limit : Number.parseInt(limit),
-        skip : Number.parseInt(skip),
+        skip : Number.parseInt(skip) || 0,
     };
 
     next();

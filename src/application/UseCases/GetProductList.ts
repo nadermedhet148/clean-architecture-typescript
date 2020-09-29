@@ -1,4 +1,4 @@
-import { IProductRepository } from "domain/interfaces/Repositories/IProductRepository";
+import { IProductRepository , IGetProductsParams } from "domain/interfaces/Repositories/IProductRepository";
 
 export class GetProductList {
 
@@ -6,15 +6,10 @@ export class GetProductList {
 
     }
 
-    execute(params : {
-        pagination : {
-            limit : number;
-            skip : number;
-        },
-        categoryId : number
-    }){
-
-        return [];
+    async execute(params : IGetProductsParams){
+        
+        const data = await this.ProductRepository.getProducts(params)
+        return data ;
         
     }
 

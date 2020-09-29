@@ -1,10 +1,12 @@
 import { establishConnection } from "./../../../drivers/db/connection";
-import { Connection } from "typeorm";
+import { Connection, getConnection, Repository } from "typeorm";
 
 export class TypeOrmRepository {
 
-async  getConnection() : Promise<Connection>{
-     return establishConnection();
+    connection = getConnection('default');
+
+async  getRepository(entity) : Promise<Repository<any>>{
+     return this.connection.getRepository(entity)
  }
 
 }

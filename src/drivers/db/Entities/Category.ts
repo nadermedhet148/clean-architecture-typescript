@@ -22,5 +22,14 @@ export class Category extends BaseEntity {
     product => product.category,
   )
   products : Product[];
+
+  @ManyToOne(
+    type => Category,
+    product => product.parent,
+  )
+  @JoinColumn({ name: "parent_id" })
+  parent : Category;
+
+  
   
 }
