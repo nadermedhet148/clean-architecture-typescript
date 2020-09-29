@@ -7,5 +7,6 @@ export interface Request {
     path;
     headers;
     files;
+    pagination;
   }
   

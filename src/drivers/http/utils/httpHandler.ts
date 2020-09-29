@@ -12,6 +12,7 @@ export const httpHandler =  function createControllerCallback(controller) {
         "User-Agent": req.get("User-Agent"),
         Lang: req.get("Lang") || "en",
         authorization: req.get("authorization"),
+        pagination : req.pagination,
       },
     };
     controller(httpRequest)
