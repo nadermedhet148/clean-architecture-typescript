@@ -10,7 +10,6 @@
 
 ## Description of the layers (from inside to outside)
 
-![The clean architecture (cleancoder.com)](CleanArchitecture.jpg)
 
 ### Entities
 
