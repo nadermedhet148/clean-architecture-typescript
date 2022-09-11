@@ -46,7 +46,7 @@ Conversion of data format :
 - use cases and entities format => external systems format (ex : Database, API)
 - external systems format => use cases and entities format
 
-> No code inward of this circle should know anything at all about the database. If the database is a SQL database, then all the SQL should be restricted to this layer, and in particular to the parts of this layer that have to do with the database.
+> No code inward of this circle should know anything at all about the database. If the database is a [SQL database](https://www.scaler.com/topics/sql/types-of-database-in-sql/), then all the SQL should be restricted to this layer, and in particular to the parts of this layer that have to do with the database.
 
 
 ### External systems
